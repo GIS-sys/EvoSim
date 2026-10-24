@@ -1,0 +1,16 @@
+# Versions below are what the project was developed and tested with (Linux, CPU backend).
+# Check current releases and Windows wheels at install time; bump deliberately and re-run `pytest`.
+warp-lang==1.18.0
+numpy==2.4.4
+glfw==2.11.0
+moderngl==5.13.0
+imgui-bundle==1.93.0
+PyOpenGL==3.1.10        # required by imgui-bundle's Python GLFW backend
+zstandard==0.25.0
+pyarrow==26.0.0         # Parquet stats (falls back to CSV if missing)
+PyYAML==6.0.3           # sweep files
+# optional
+psutil==7.2.2           # watchdog memory-growth check, hardware stats
+pillow==12.1.1          # PNG frames/screenshots (a pure-numpy PNG writer is the fallback)
+# nvidia-ml-py          # optional: GPU temperature/clock/power/VRAM columns in the stats files
+# pytest==9.1.1         # tests

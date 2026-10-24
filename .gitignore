@@ -1,0 +1,85 @@
+# ---------- Python environments ----------
+.venv/
+venv/
+env/
+ENV/
+.env
+
+# ---------- Python build / install artifacts ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+build/
+dist/
+.eggs/
+pip-wheel-metadata/
+pip-log.txt
+
+# ---------- Test / tooling caches ----------
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.ipynb_checkpoints/
+
+# ---------- EvoSim outputs (all generated, can be large) ----------
+runs/
+snapshots/
+screenshots/
+exports/
+exported_genomes/
+frames/
+*.evck
+*.evck.keep
+archive.sqlite
+*.sqlite
+*.sqlite-journal
+status.json
+sweep_summary.csv
+timelapse.mp4
+
+# Files the viewer writes into the working directory by default
+/genome_export.asm
+/snapshot.evck
+/policies.json
+/schedule.json
+
+# Stats written outside run directories
+stats_*.parquet
+stats_*.csv
+
+# ---------- Warp / GPU caches (normally live in your user profile, listed in case they appear here) ----------
+.warp/
+warp_cache/
+*.cubin
+*.ptx
+*.pdb
+*.obj
+
+# ---------- Logs and temp ----------
+*.log
+log.txt
+*.tmp
+.tmp_*
+*.bak
+*.swp
+*~
+
+# ---------- Editors / IDEs ----------
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# ---------- OS junk ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+$RECYCLE.BIN/
